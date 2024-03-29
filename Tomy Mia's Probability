@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+int factorial(int n){
+    int ans =1;
+    for(int i=n;i>0;i--)
+        ans*=i;
+    return ans;
+}
+
+
+int main() {
+    int t;
+    cin>>t;
+    cin.ignore();
+    for(int i=0;i<t;i++){
+        string str,word;
+        map<string,int>str2;
+        vector<int>number;
+        int n=0, count =1;
+        getline(cin,str);
+        stringstream st(str);
+        while(st>>word){
+            str2[word]++;
+            n++;
+        }
+        map<string,int>::iterator itr;
+        for(itr = str2.begin();itr != str2.end();itr++){
+            if(itr->second >1){
+                count *= factorial(itr->second);
+            }
+        }
+        int ans = factorial(n)/count;
+        cout<<"1/"<<ans<<endl;
+    }
+    return 0;
+}
