@@ -31,8 +31,8 @@ int main() {
                 count *= factorial(itr->second);
             }
         }
-        int ans = factorial(n)/count;
-        cout<<"1/"<<ans<<endl;
+        int soln = factorial(n)/count;
+        cout<<"1/"<<soln<<endl;
     }
     return 0;
 }
