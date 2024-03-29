@@ -7,7 +7,7 @@ int main() {
     // Your cpp code here
     int t;
     cin>>t;
-    for(int k=1;k<=t;k++){
+    for(int case=1;case<=t;case++){
     int n;
     cin>>n;
     for(int i=1;i<=n;i++){
@@ -16,7 +16,7 @@ int main() {
         }
         cout<<"\n";
     }
-        if(k!=t) {cout<<'\n';}
+        if(case!=t) {cout<<'\n';}
         }
     return 0;
 }
