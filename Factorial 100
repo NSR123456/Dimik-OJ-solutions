@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+#define ll long long
+using namespace std;
+
+// Reads two integers and prints their sum
+
+
+int main() {
+    int t;
+    cin>>t;
+    for(int k=1;k<=t;k++){
+        int num,count=0;
+        cin>>num;
+        int a = 5;
+        while(a<=num){
+            count+=num/a;
+            a *=5;
+        }
+        cout<<count<<'\n';
+
+    }
+    return 0;
+}
